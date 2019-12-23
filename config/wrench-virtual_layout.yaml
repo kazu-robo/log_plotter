@@ -1,0 +1,55 @@
+main:
+# leg main
+  force z (virtual):
+    legends:
+      - { key: sh_vrthighsensorOut, id: [2] }
+      - { key: sh_vlthighsensorOut, id: [2] }
+      - { key: st_ref_vrthighsensor, id: [2] }
+      - { key: st_ref_vlthighsensor, id: [2] }
+      - { key: vs_off_vrthighsensor, id: [2] }
+      - { key: vs_off_vlthighsensor, id: [2] }
+    bottom_label:
+    newline: false
+
+  moment xy (virtual):
+    legends:
+      - { key: sh_vrthighsensorOut, id: [3-4] }
+      - { key: sh_vlthighsensorOut, id: [3-4] }
+      - { key: st_ref_vrthighsensor, id: [3-4] }
+      - { key: st_ref_vlthighsensor, id: [3-4] }
+      - { key: vs_off_vrthighsensor, id: [3-4] }
+      - { key: vs_off_vlthighsensor, id: [3-4] }
+    bottom_label:
+    newline: false
+
+  optional_data (virtual):
+    legends:
+      - { key: abc_contactStates, id: [4], label: rleg }
+      - { key: abc_contactStates, id: [5], label: lleg }
+      - { key: st_debugData, id: [4], label: rleg_contact_phase }
+      - { key: st_debugData, id: [5], label: lleg_contact_phase }
+      - { key: abc_controlSwingSupportTime, id: [4], label: rleg_time }
+      - { key: abc_controlSwingSupportTime, id: [5], label: lleg_time }
+    bottom_label:
+
+# leg sub
+  force xy (virtual):
+    legends:
+      - { key: sh_vrthighsensorOut, id: [0-1] }
+      - { key: sh_vlthighsensorOut, id: [0-1] }
+      - { key: st_ref_vrthighsensor, id: [0-1] }
+      - { key: st_ref_vlthighsensor, id: [0-1] }
+      - { key: vs_off_vrthighsensor, id: [0-1] }
+      - { key: vs_off_vlthighsensor, id: [0-1] }
+    bottom_label:
+    newline: false
+
+  moment z (virtual):
+    legends:
+      - { key: sh_vrthighsensorOut, id: [5] }
+      - { key: sh_vlthighsensorOut, id: [5] }
+      - { key: st_ref_vrthighsensor, id: [5] }
+      - { key: st_ref_vlthighsensor, id: [5] }
+      - { key: vs_off_vrthighsensor, id: [5] }
+      - { key: vs_off_vlthighsensor, id: [5] }
+    bottom_label:

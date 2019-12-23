@@ -48,6 +48,12 @@ sh_rhsensorOut:
 sh_lhsensorOut:
   data:
     - { log: sh_lhsensorOut, column: [0-5] }
+sh_vrthighsensorOut:
+  data:
+    - { log: sh_vrthighsensorOut, column: [0-5] }
+sh_vlthighsensorOut:
+  data:
+    - { log: sh_vlthighsensorOut, column: [0-5] }
 RobotHardware0_rfsensor:
   data:
     - { log: RobotHardware0_rfsensor, column: [0-5] }
@@ -74,6 +80,14 @@ rmfo_off_rhsensor:
 rmfo_off_lhsensor:
   data:
     - { log: rmfo_off_lhsensor, column: [0-5] }
+vs_off_vrthighsensor:
+  func: plot_inverse
+  data:
+    - { log: vs_off_vrthighsensor, column: [0-5] }
+vs_off_vlthighsensor:
+  func: plot_inverse
+  data:
+    - { log: vs_off_vlthighsensor, column: [0-5] }
 st_ref_rfsensor:
   data:
     - { log: st_allRefWrench, column: [0-5] }
@@ -86,6 +100,12 @@ st_ref_rhsensor:
 st_ref_lhsensor:
   data:
     - { log: st_allRefWrench, column: [18-23] }
+st_ref_vrthighsensor:
+  data:
+    - { log: st_allRefWrench, column: [24-29] }
+st_ref_vlthighsensor:
+  data:
+    - { log: st_allRefWrench, column: [30-35] }
 abc_rfsensor:
   data:
     - { log: abc_rfsensor, column: [0-2] }
@@ -156,14 +176,14 @@ st_currentBasePos:
 # optional data
 abc_contactStates:
   data:
-    - { log: abc_contactStates, column: [0-3] }
+    - { log: abc_contactStates, column: [0-5] }
 abc_controlSwingSupportTime:
   data:
-    - { log: abc_controlSwingSupportTime, column: [0-3] }
+    - { log: abc_controlSwingSupportTime, column: [0-5] }
 # debug data
 st_debugData:
   data:
-    - { log: st_debugData, column:[0-3] }
+    - { log: st_debugData, column:[0-5] }
 # COP
 sh_rfcop:
   data:
